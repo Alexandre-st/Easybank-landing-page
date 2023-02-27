@@ -18,7 +18,7 @@ const Menu = () => {
       )}
       {openMenu && (
         <>
-          <img src={logoCloseMenu} alt="Close the menu" onClick={toggleMenu} />
+          <img className="navigation-menu-logo" src={logoCloseMenu} alt="Close the menu" onClick={toggleMenu} />
           <AnimatePresence>
             <motion.div className="navigation-background">
               <nav className="navigation-mobile">

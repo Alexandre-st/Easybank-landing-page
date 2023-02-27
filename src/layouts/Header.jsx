@@ -12,16 +12,16 @@ const Header = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
       >
-      <img src={easybankLogo} alt="Easybank" />
-      <nav className="navigation-desktop">
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-          <li>Blog</li>
-          <li>Carrers</li>
-        </ul>
-      </nav>
+        <img className="navigation-logo" src={easybankLogo} alt="Easybank" />
+        <nav className="navigation-desktop">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Blog</li>
+            <li>Carrers</li>
+          </ul>
+        </nav>
         {/* <Link to="/" className="navigation-button">Request Invite</Link> */}
         <Menu />
       </motion.header>
