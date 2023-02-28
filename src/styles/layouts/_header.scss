@@ -1,5 +1,11 @@
 @use "../base/mixins" as *;
 
+header {
+  background-color: #ffffff;
+  position: relative;
+  z-index: 2;
+}
+
 .navigation {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
