@@ -1,9 +1,9 @@
 import { AnimatePresence, motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import easybankLogo from "../assets/images/logo.svg";
 import Menu from "../components/Menu";
 
 const Header = () => {
+
   return (
     <AnimatePresence>
       <motion.header
@@ -22,7 +22,9 @@ const Header = () => {
             <li>Carrers</li>
           </ul>
         </nav>
-        {/* <Link to="/" className="navigation-button">Request Invite</Link> */}
+        <button className="navigation-button">
+          Request Invite
+        </button>
         <Menu />
       </motion.header>
     </AnimatePresence>
