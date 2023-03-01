@@ -13,8 +13,15 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    max-height: 65.6rem;
     overflow-y: hidden;
+  }
+
+  @include mq(laptop) {
+    background-position: 40rem 170%;
+  }
+
+  @include mq(desktop) {
+    background-position: 42rem 250%;
   }
 
   &-img {
@@ -29,6 +36,15 @@
       padding: 0;
       flex: 1;
     }
+
+    @include mq(laptop) {
+      top: -6rem;
+      right: -10rem;
+    }
+
+    @include mq(desktop) {
+      right: -11.2rem;
+    }
   }
 
   &-content {
@@ -39,9 +55,17 @@
     @include mq(tablet) {
       text-align: left;
       margin-top: 0;
-      max-width: 44.7rem;
+      max-width: 39.6rem;
       padding: 0 0 0 2.4rem;
       flex: 1;
+    }
+
+    @include mq(laptop) {
+      max-width: 44.7rem;
+    }
+
+    @include mq(desktop) {
+      padding: 0;
     }
 
     &-text {
