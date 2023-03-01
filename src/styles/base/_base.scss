@@ -1,6 +1,18 @@
+@use "../base/mixins" as *;
+
 :root {
   font-size: 10px;
   font-family: "Public Sans", sans-serif;
+  background-color: #fafafa;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2d314d;
 }
 
 .container {
@@ -13,12 +25,31 @@
   margin-inline: auto;
 }
 
+.big-title {
+  font-size: 4rem;
+  line-height: 4.7rem;
+  font-weight: 300;
+  letter-spacing: -0.714286px;
+
+  @include mq(laptop) {
+    font-size: 5.6rem;
+    line-height: 6.4rem;
+    letter-spacing: -1px;
+  }
+}
+
 .text {
   font-size: 1.5rem;
   line-height: 2.5rem;
   font-weight: 400;
   letter-spacing: -0.234375px;
   color: #9597a5;
+
+  @include mq(laptop) {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    letter-spacing: -0.28125px;
+  }
 }
 
 .button {

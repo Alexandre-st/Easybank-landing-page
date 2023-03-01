@@ -8,7 +8,7 @@ const Homepage = () => {
           <img src={mockups} alt="Application mockups" />
         </div>
         <div className="hero-content">
-          <h1 className="hero-content-title">
+          <h1 className="hero-content-title big-title">
             Next generation digital banking
           </h1>
           <p className="hero-content-text text">
