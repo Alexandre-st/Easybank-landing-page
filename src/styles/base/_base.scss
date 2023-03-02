@@ -13,6 +13,7 @@ h4,
 h5,
 h6 {
   color: #2d314d;
+  font-weight: 300;
 }
 
 .container {
@@ -28,7 +29,6 @@ h6 {
 .big-title {
   font-size: 4rem;
   line-height: 4.7rem;
-  font-weight: 300;
   letter-spacing: -0.714286px;
 
   @include mq(laptop) {
