@@ -12,7 +12,6 @@
     background-position: 36rem 94%;
     display: flex;
     flex-direction: row-reverse;
-    // align-items: center;
     overflow-y: hidden;
   }
 
@@ -83,6 +82,95 @@
 
       @include mq(tablet) {
         margin: 0;
+      }
+    }
+  }
+}
+
+// PART DESCRIPTION
+.description {
+  background-color: #f4f5f7;
+  margin-top: 6.8rem;
+
+  @include mq(tablet) {
+    margin-top: -4rem;
+  }
+
+  @include mq(laptop) {
+    margin-top: -15rem;
+  }
+
+  @include mq(desktop) {
+    margin-top: -20.6rem;
+  }
+
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    padding: 6.4rem 0;
+
+    @include mq(tablet) {
+      text-align: start;
+      padding: 9.6rem 0 9.4rem 0;
+    }
+  }
+
+  &-header {
+    grid-column: 1/5;
+
+    p {
+      margin-top: 1.4rem;
+
+      @include mq(tablet) {
+        max-width: 63.5rem;
+        margin-top: 1.6rem;
+      }
+    }
+  }
+
+  &-content {
+    grid-column: 1/5;
+    margin-top: 5.6rem;
+
+    @include mq(tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 3rem;
+    }
+
+    @include mq(laptop) {
+      margin-top: 7.2rem;
+    }
+
+    &-article {
+      margin-bottom: 3.2rem;
+
+      @include mq(tablet) {
+        max-width: 25.5rem;
+        margin-bottom: 0;
+      }
+
+      h3 {
+        font-size: 2rem;
+        line-height: 2.8rem;
+        letter-spacing: -0.357143px;
+        margin: 2.4rem 0 1.6rem 0;
+
+        @include mq(tablet) {
+          font-size: 2.4rem;
+          letter-spacing: -0.428571px;
+          margin: 4rem 0 2.6rem 0;
+        }
+      }
+
+      &-image {
+        margin: auto;
+
+        @include mq(tablet) {
+          margin: 0;
+        }
       }
     }
   }

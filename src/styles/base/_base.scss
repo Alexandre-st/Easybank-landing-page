@@ -16,6 +16,11 @@ h6 {
   font-weight: 300;
 }
 
+p {
+  color: #9597a5;
+  font-weight: 400;
+}
+
 .container {
   width: min(100% - 4.8rem, 111rem);
   margin-inline: auto;
@@ -38,17 +43,38 @@ h6 {
   }
 }
 
+.mid-title {
+  font-size: 3.2rem;
+  line-height: 3.8rem;
+  letter-spacing: -0.571429px;
+
+  @include mq(tablet) {
+    font-size: 4rem;
+    line-height: 6.4rem;
+    letter-spacing: -0.714286px;
+  }
+}
+
 .text {
   font-size: 1.5rem;
   line-height: 2.5rem;
-  font-weight: 400;
   letter-spacing: -0.234375px;
-  color: #9597a5;
 
   @include mq(laptop) {
     font-size: 1.8rem;
     line-height: 2.8rem;
     letter-spacing: -0.28125px;
+  }
+}
+
+.mid-text {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  letter-spacing: -0.25px;
+
+  @include mq(tablet) {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
   }
 }
 
