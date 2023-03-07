@@ -1,3 +1,4 @@
+import Footer from "./layouts/Footer";
 import Header from "./layouts/Header";
 import Homepage from "./page/Homepage";
 
@@ -7,6 +8,7 @@ const App = () => {
     <>
       <Header />
       <Homepage />
+      <Footer />
     </>
   )
 };

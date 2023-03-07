@@ -1,0 +1,51 @@
+.footer {
+  background-color: #2d314d;
+
+  &-container {
+    text-align: center;
+    padding: 4rem 7.7rem 4rem 7.8rem;
+  }
+
+  &-social {
+    &-logo {
+      margin: auto;
+    }
+    &-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.6rem;
+      margin: 3.2rem 0;
+
+      img {
+        width: 2.4rem;
+      }
+    }
+  }
+
+  &-link {
+    margin: 3.2rem 3rem;
+
+    &-list {
+      font-weight: 400;
+      font-size: 1.5rem;
+      line-height: 2.6rem;
+      letter-spacing: -0.234375px;
+      color: #ffffff;
+
+      li:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  &-copyright {
+    a {
+      margin: auto;
+    }
+
+    p {
+      margin-top: 2.4rem;
+    }
+  }
+}
