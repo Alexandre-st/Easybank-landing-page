@@ -245,6 +245,12 @@
       line-height: 2rem;
       letter-spacing: -0.285714px;
       margin: 0.8rem 0;
+
+      &:hover {
+        cursor: pointer;
+        color: #30c88f;
+        transition: all 0.4s ease;
+      }
     }
   }
 }

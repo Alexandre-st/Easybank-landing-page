@@ -22,7 +22,7 @@ const Header = () => {
               <li>Carrers</li>
             </ul>
           </nav>
-          <button className="navigation-button">Request Invite</button>
+          <button className="navigation-button button">Request Invite</button>
           <Menu />
         </div>
       </motion.header>

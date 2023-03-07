@@ -43,7 +43,6 @@ const Homepage = () => {
           </div>
         </motion.section>
       </AnimatePresence>
-      {/* Why Choose Easybank */}
       <section className="description">
         <div className="container description-container">
           <div className="description-header">

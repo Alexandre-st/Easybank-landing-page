@@ -37,7 +37,7 @@ const Footer = () => {
             <li>Blog</li>
           </ul>
           <ul className="footer-link-list">
-            <li>Careeres</li>
+            <li>Careers</li>
             <li>Support</li>
             <li>Privacy Policy</li>
           </ul>

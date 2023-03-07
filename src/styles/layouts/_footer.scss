@@ -23,6 +23,10 @@
     &-logo {
       margin: auto;
 
+      &:hover {
+        cursor: pointer;
+      }
+
       @include mq(tablet) {
         margin: 0;
       }
@@ -45,6 +49,11 @@
 
         @include mq(tablet) {
           width: 2rem;
+        }
+
+        &:hover {
+          filter: invert(58%) sepia(82%) saturate(388%) hue-rotate(106deg)
+            brightness(98%) contrast(81%);
         }
       }
     }
@@ -71,8 +80,16 @@
         width: 12rem;
       }
 
-      li:not(:last-child) {
-        margin-bottom: 8px;
+      li {
+        &:not(:last-child) {
+          margin-bottom: 8px;
+        }
+
+        &:hover {
+          cursor: pointer;
+          color: #30c88f;
+          transition: all 0.4s ease;
+        }
       }
     }
   }

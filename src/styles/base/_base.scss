@@ -95,4 +95,9 @@ p {
   border-radius: 2.2rem;
   padding: 0.8rem 0;
   text-align: center;
+
+  &:hover {
+    opacity: 0.4;
+    transition: all 0.4s ease;
+  }
 }
