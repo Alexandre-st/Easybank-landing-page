@@ -2,6 +2,8 @@
 
 FrontEnd Mentor Challenge
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d5b9f5e7-0e71-47ff-a0eb-60f47b3d2f7b/deploy-status)](https://app.netlify.com/sites/easybank-landing-page-alexandre-st/deploys)
+
 # Welcome ! 👋
 
 ## Screenshot
