@@ -179,10 +179,19 @@
 .articles {
   margin: 8.8rem 0;
 
+  @include mq(tablet) {
+    margin: 8rem 0;
+  }
+
   &-container {
     h3 {
       margin-bottom: 3.1rem;
       text-align: center;
+
+      @include mq(tablet) {
+        margin-bottom: 4rem;
+        text-align: start;
+      }
     }
   }
 
