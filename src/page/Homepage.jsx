@@ -1,23 +1,20 @@
 import { AnimatePresence, motion } from "framer-motion";
+import Article from "../components/Article";
+import Description from "../components/Description";
 // Image for the description
 import Api from "../assets/images/icon-api.svg";
 import Budgeting from "../assets/images/icon-budgeting.svg";
 import Onboarding from "../assets/images/icon-onboarding.svg";
 import Banking from "../assets/images/icon-online.svg";
+// Import for the Article part
+import Confetti from "../assets/images/image-confetti.jpg";
+import Dollars from "../assets/images/image-currency.jpg";
+import Plane from "../assets/images/image-plane.jpg";
+import Restaurant from "../assets/images/image-restaurant.jpg";
 // Image for the Hero
 import mockups from "../assets/images/image-mockups.png";
 
 const Homepage = () => {
-
-  const Description = (props) => {
-    return (
-      <div className="description-content-article">
-        <img className="description-content-article-image" src={props.image} alt="logo" />
-        <h3>{props.title}</h3>
-        <p className="mid-text">{props.text}</p>
-      </div>
-    );
-  }; 
 
   return (
     <main>
@@ -76,6 +73,38 @@ const Homepage = () => {
               image={Api}
               title="Open API"
               text="Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier."
+            />
+          </div>
+        </div>
+      </section>
+      <section className="articles">
+        <div className="container articles-container">
+          <h3 className="mid-title">Latest Articles</h3>
+
+          <div className="articles-content">
+            <Article
+              image={Dollars}
+              name="By Claire Robinson"
+              title="Receive money in any currency with no fees"
+              paragraph="The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single …"
+            />
+            <Article
+              image={Restaurant}
+              name="By Wilson Hutton"
+              title="Treat yourself without worrying about money"
+              paragraph="Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you …"
+            />
+            <Article
+              image={Plane}
+              name="By Wilson Hutton"
+              title="Take your Easybank card wherever you go"
+              paragraph="We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you …"
+            />
+            <Article
+              image={Confetti}
+              name="By Claire Robinson"
+              title="Our invite-only Beta accounts are now live!"
+              paragraph="After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ..."
             />
           </div>
         </div>
